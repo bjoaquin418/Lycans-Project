@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lycans Project</title>
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="preload" href="assets/js/main.js" as="script" />
+    <link rel="preload" fetchpriority="high" as="image" href="assets/img/Flag.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="assets/css/bg.webp" type="image/webp">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.9/swiper-bundle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon//site.webmanifest">
+</head>
+<body>
+   <div class="page-overlay">
+  <div class="preloader-img"><img src="assets/img/lycans-logotype.webp" alt="lycans-logotype"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="preloader-black"></div>
+   </div>
+    <div class="sidebar" id="sidebar">
+        <div class="logomenu">
+            <div class="desktop-logo"><a href=""><img src="assets/img/lycans-logotype.webp" alt="lycans-logotype"></div></a>
+            <div class="desktop-burger toggle" id="menu"><button class="menu">
+              <svg width="80" height="80" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+            </button></div>
+        </div>
+        <li class="desktop-socials">
+            <a class="page-tt" href="test.html"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="page-tt" href="test.html"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="page-tt" href="test.html"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="page-tt" href="test.html"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+    </div>
+    <div class="sidebar-placeholder"></div>
+    <div class="body" id="body">
+    <div class="overlay-menu" id="overlay-menu">
+      <div class="menu-header">
+          <h1>Menu</h1>
+          <form onsubmit="event.preventDefault();" role="search">
+            <input class="search-input" id="search" type="search" placeholder="Search..." autofocus required />
+            <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>    
+          </form>
+      </div>
+      <div class="overlay-menu-container">
+        <div class="dropdown" id="teams-dropdown">
+            <button class="dropdown-toggle">Teams</button>
+            <div class="dropdown-content">
+              <a class="page-tt menu-link" href="test.html">E-sports</a>
+              <a class="page-tt menu-link" href="test.html">Basketball</a>
+              <a class="page-tt menu-link" href="test.html">Volleyball</a>
+            </div>
+        </div>
+        <div class="dropdown" id="news-dropdown">
+          <button class="dropdown-toggle">News</button>
+          <div class="dropdown-content">
+            <a class="page-tt menu-link" href="test.html">Articles</a>
+            <a class="page-tt menu-link" href="test.html">Galleries</a>
+          </div>
+      </div>
+      <div class="dropdown" id="about-dropdown">
+        <button class="dropdown-toggle">About</button>
+        <div class="dropdown-content">
+          <a class="page-tt menu-link" href="test.html">Our Story</a>
+          <a class="page-tt menu-link" href="test.html">Management</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropdown-toggle">Shop</button>
+      <div class="dropdown-content">
+        <a class="page-tt menu-link" href="test.html">24/25 Kit</a>
+        <a class="page-tt menu-link" href="test.html">Accessories</a>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="black-overlay"></div>
+    <div class="desktop-menu">
+        <li>
+            <a class="desktop-menu-link page-tt" href="test.html">News</a>
+            <a class="desktop-menu-link page-tt" href="test.html">Teams</a>
+            <a class="desktop-menu-link page-tt" href="test.html">About</a>
+            <a class="desktop-menu-link page-tt" href="test.html">Shop</a>
+        </li>
+        <a class="desktop-menu-link page-tt" href="test.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+    <section class="hero-section target">
+        <div class="hero" id="hero">
+        <div class="headline-button">
+        <h1>Where Champions are <span class="text-change">Forged</span> and Legends <span class="text-change">Thrive</span></h1>
+        <div class="scrollpage">
+          <h6>Lead The Pack</h6>
+          <svg class="hero-border" width="1" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="white" />
+          </svg>
+          <button class="scrollbtn" id="scrollbtn" onclick="scrollToSecondSection()">
+            <p class="scrollbtntext">
+              <span class="rotate-text" style="--index: 0;">S</span>
+              <span class="rotate-text" style="--index: 1;">C</span>
+              <span class="rotate-text" style="--index: 2;">R</span>
+              <span class="rotate-text" style="--index: 3;">O</span>
+              <span class="rotate-text" style="--index: 4;">L</span>
+              <span class="rotate-text" style="--index: 5;">L</span>
+              <span class="rotate-text" style="--index: 6;"></span>
+              <span class="rotate-text" style="--index: 7;">S</span>
+              <span class="rotate-text" style="--index: 8;">C</span>
+              <span class="rotate-text" style="--index: 9;">R</span>
+              <span class="rotate-text" style="--index: 10;">O</span>
+              <span class="rotate-text" style="--index: 11;">L</span>
+              <span class="rotate-text" style="--index: 12;">L</span>
+              <span class="rotate-text" style="--index: 13;"></span>
+              <span class="rotate-text" style="--index: 14;">S</span>
+              <span class="rotate-text" style="--index: 15;">C</span>
+              <span class="rotate-text" style="--index: 16;">R</span>
+              <span class="rotate-text" style="--index: 17;">O</span>
+              <span class="rotate-text" style="--index: 18;">L</span>
+              <span class="rotate-text" style="--index: 19;">L</span>
+            </p>
+          
+            <div class="scrollbtncircle">
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="scrollbtnicon"
+                width="25"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+          
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+                class="scrollbtnicon scrollbtniconcopy"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+        <img class="hero-img" loading="eager" src="assets/img/Flag.webp" alt="hero"></img>
+      </div>
+    </section>
+
+    <section class="games-section lazy" id="gamessct">
+        <div class="section-header games-header"><h1>Upcoming Games</h1><a class="page-tt" href="test.html">More</a></div>
+        <div class="games-container">
+        <div class="latest-game-swiper swiper">
+        <div class="latest-game-wrapper swiper-wrapper">
+        <div class="latest-game swiper-slide">
+            <li class="date-time">
+                <h3>3 pm - sunday</h3>
+                <h1>aug 18</h1>
+            </li>
+            <svg class="line-border" width="1" height="90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="white" />
+              </svg>
+            <li class="place-teams">
+                <h3>volleyball league</h3>
+                <h1>lycans <span>vs</span> archers</h1>
+            </li>
+            <svg class="line-border" width="1" height="90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="white" />
+              </svg>
+            <a class="button page-tt" href="test.html" >buy ticket</a>
+        </div>
+        <div class="latest-game swiper-slide">
+          <li class="date-time">
+              <h3> 7pm - sunday</h3>
+              <h1>aug 25</h1>
+          </li>
+          <svg class="line-border" width="1" height="90" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100%" height="100%" fill="white" />
+            </svg>
+          <li class="place-teams">
+              <h3>b-league</h3>
+              <h1>lycans <span>vs</span> Vipers</h1>
+          </li>
+          <svg class="line-border" width="1" height="90" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100%" height="100%" fill="white" />
+            </svg>
+            <a class="button page-tt" href="test.html" >buy ticket</a>
+      </div>
+        </div>
+      </div>
+          </div>
+          <div class="swiper-pagination" id="games-pagination"></div>
+        <div class="result-header"><h1>Latest Result</h1></div>
+        <div class="result-swiper swiper">
+        <div class="result-container swiper-wrapper">
+        <div class="result-tab swiper-slide">
+            <h1 class="tournament">E-League</h1>
+            <div class="match-details">
+                <h2 class="team-name">Lycans</h2>
+                <h1 class="score">2</h1>
+                <p>:</p>
+                <h1 class="score">1</h1>
+                <h2 class="team-name">Falcons</h2>
+            </div>
+            <div class="team-logos">
+                <img src="assets/img/lycans.webp" loading="lazy" alt="lycans-logotype" class="main-team-logo">
+                <img src="assets/img/falcon.webp" loading="lazy" alt="opponent-logo" class="opponent-logo">
+            </div>
+        </div>
+        <div class="result-tab swiper-slide">
+          <h1 class="tournament">B-League</h1>
+          <div class="match-details">
+              <h2 class="team-name">Lycans</h2>
+              <h1 class="score">93</h1>
+              <p>:</p>
+              <h1 class="score">72</h1>
+              <h2 class="team-name">Vikings</h2>
+          </div>
+          <div class="team-logos">
+              <img src="assets/img/lycans.webp" loading="lazy" alt="lycans-logotype" class="main-team-logo">
+              <img src="assets/img/vikings.webp" loading="lazy" alt="opponent-logo" class="opponent-logo">
+          </div>
+      </div>
+      </div>
+      <div class="swiper-pagination" id="result-pagination"></div>
+    </div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48" style="--progress: 0.40680000000000005;">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span>2s</span>
+    </div>
+    
+    </section>
+    <section class="news-section">
+        <div class="section-header news-header"><h1>Latest News</h1><a class="page-tt" href="test.html">More</a></div>
+        <div class="news-container">
+            <div class="news1 news-tab">
+                <div class="news-details">
+                    <h5 class="category">E-sports</h5>
+                    <h1 class="headline">Lycans Secure Semifinal Spot in Prestigious E-League Tournament</h1>
+                    <a class="page-tt read-button" href="test.html">
+                        Read More
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          ></path>
+                        </svg>
+                      </a>
+                </div>
+                <div class="overlay"></div>
+                <img src="assets/img/e-sports-news.webp" loading="lazy" class="news-img" alt="e-sports-news">
+            </div>
+            <div class="news2 news-tab">
+                <div class="news-details">
+                    <h5 class="category">Basketball</h5>
+                    <h1 class="headline">From Rookie to MVP: Lucas Monroe Leads Lycans to Glory</h1>
+                    <a class="page-tt read-button" href="test.html">
+                        Read More
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          ></path>
+                        </svg>
+                      </a>
+                </div>
+                <div class="overlay"></div>
+                <img src="assets/img/bball-news.webp" loading="lazy" class="news-img" alt="basketball-news">
+            </div>
+            <div class="news3 news-tab">
+                <div class="news-details">
+                    <h5 class="category">Volleyball</h5>
+                    <h1 class="headline">Lycans Spike to Victory: Dominant Volleyball Performance Leaves Rivals in Awe</h1>
+                    <a class="page-tt read-button" href="test.html">
+                        Read More
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          ></path>
+                        </svg>
+                      </a>
+                </div>
+                <div class="overlay"></div>
+                <img src="assets/img/vball-news.webp" loading="lazy" class="news-img" alt="volleyball-news">
+            </div>
+        </div>
+    </section>
+    <section class="newsletter lazy">
+      <div class="newsletter-container">
+        <div class="newsletter-header">
+          <h1>Join The Pack</h1>
+          <p>Subscribe to our newsletter and receive exclusive updates</p>
+        </div>
+        <div class="input-group">
+          <input type="email" class="email-input" id="Email" name="Email" placeholder="enter email" autocomplete="off">
+          <input class="button--submit" value="Subscribe" type="submit">
+      </div>
+      </div>
+
+    </section>
+    <section class="teams-section panel" id="teamssct">
+      <div class="teams-header"><h1>Teams</h1></div>
+      <div class="margin-container">
+      <div class="teams-swiper swiper">
+      <div class="teams-container swiper-wrapper">
+        <div class="team-tab swiper-slide">
+          <a class="page-tt" href="test.html">
+            <div class="team-sports"><h2>basketball</h2></div>
+            <div class="overlay"></div>
+            <img class="team-photo news-img" src="assets/img/bball-player.webp" loading="lazy" alt="bball-player">
+          </a>
+        </div>
+        <div class="team-tab swiper-slide"><a class="page-tt" href="test.html">
+          <div class="team-sports"><h2>volleyball</h2></div>
+          <div class="overlay"></div>
+          <img class="team-photo news-img" src="assets/img/vball-player.webp" loading="lazy" alt="vball-player">
+        </a>
+        </div>
+        <div class="team-tab swiper-slide"><a class="page-tt" href="test.html">
+          <div class="team-sports"><h2>e-sports</h2></div>
+          <div class="overlay"></div>
+          <img class="team-photo news-img" src="assets/img/e-sports-player.webp" loading="lazy" alt="e-sports-player">
+        </a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="swiper-pagination" id="teams-pagination"></div>
+    </section>
+    <section class="shop-section">
+      <div class="shop-container">
+        <div class="shop-header">
+          <h1>SHOP<br>25-25 kit</h1>
+          <a class="button page-tt" href="test.html" >shop now</a>
+        </div>
+        <div class="item">
+          <div class="image-container">
+          <img class="item-photo image-main" src="assets/img/jersey.webp" loading="lazy" alt="jersey">
+          </div>
+          <div class="item-details">
+            <p class="item-name">LYCANS HOME SHIRT 24/25</p>
+            <div class="item-btn"><p class="item-price">$35.00</p>
+              <a class="shop-btn page-tt" href="test.html">buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image-container">
+          <img class="item-photo image-main" src="assets/img/windbreaker.webp" loading="lazy" alt="windbreaker">
+          </div>
+          <div class="item-details">
+            <p class="item-name">Lycans Windbreaker</p>
+            <div class="item-btn"><p class="item-price">$75.00</p>
+              <a class="shop-btn page-tt" href="test.html">buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image-container">
+          <img class="item-photo image-main" src="assets/img/cap.webp" loading="lazy" alt="cap">
+          </div>
+          <div class="item-details">
+            <p class="item-name">Lycans Cap</p>
+            <div class="item-btn"><p class="item-price">$15.00</p>
+              <a class="shop-btn page-tt" href="test.html">buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsor-section lazy">
+      <div class="sponsor-header"><h1>Our Partners</h1></div>
+      <div class="sponsor-container">
+        <li class="logo1 sponsor-logo"><a href=""><svg class="horizontal-logo" viewBox="0 0 105 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="ccustom" d="M48.136 35.2381H50.8704V24.9238H48.136V35.2381ZM48.136 23.3153H50.8704V20.8624H48.136V23.3153Z" fill="black"></path><path class="ccustom" d="M52.6323 38.6159H55.3667V34.072H55.407C55.99 34.9566 56.935 35.5397 58.3826 35.5397C61.0366 35.5397 62.8461 33.4286 62.8461 30.091C62.8461 26.874 61.0969 24.6423 58.3625 24.6423C56.9551 24.6423 55.99 25.3058 55.3265 26.2105H55.2662V24.9238H52.6323V38.6159ZM57.7996 33.2677C56.171 33.2677 55.3064 32.0413 55.3064 30.1714C55.3064 28.3217 55.99 26.8539 57.699 26.8539C59.3879 26.8539 60.0715 28.2211 60.0715 30.1714C60.0715 32.1217 59.1869 33.2677 57.7996 33.2677Z" fill="black"></path><path class="ccustom" d="M68.3007 35.5397C70.8742 35.5397 72.6435 34.2931 72.6435 32.2222C72.6435 29.8095 70.7335 29.327 69.0044 28.9651C67.5366 28.6635 66.1694 28.583 66.1694 27.6984C66.1694 26.9545 66.8731 26.5523 67.9388 26.5523C69.1049 26.5523 69.8086 26.9545 69.9292 28.0603H72.4023C72.2012 25.9894 70.6933 24.6423 67.979 24.6423C65.6266 24.6423 63.7768 25.7079 63.7768 27.9396C63.7768 30.1915 65.5864 30.6942 67.4361 31.0561C68.8435 31.3375 70.1504 31.4381 70.1504 32.4233C70.1504 33.1471 69.4668 33.6095 68.2604 33.6095C67.034 33.6095 66.1895 33.0868 66.0086 31.9005H63.4752C63.6361 34.0921 65.3049 35.5397 68.3007 35.5397Z" fill="black"></path><path class="ccustom" d="M83.0252 35.2381V24.9238H80.2908V30.8751C80.2908 32.2423 79.5067 33.2074 78.2199 33.2074C77.0538 33.2074 76.5109 32.5439 76.5109 31.3375V24.9238H73.7966V31.8C73.7966 34.0518 75.0834 35.5196 77.3755 35.5196C78.8231 35.5196 79.6273 34.9767 80.3311 34.0317H80.3914V35.2381H83.0252Z" fill="black"></path><path class="ccustom" d="M84.7939 35.2381H87.5284V29.2465C87.5284 27.8793 88.2723 26.9947 89.3781 26.9947C90.3834 26.9947 90.9665 27.5978 90.9665 28.764V35.2381H93.7009V29.2465C93.7009 27.8793 94.4046 26.9947 95.5506 26.9947C96.5559 26.9947 97.139 27.5978 97.139 28.764V35.2381H99.8734V28.3016C99.8734 26.0497 98.6469 24.6423 96.4755 24.6423C95.1686 24.6423 94.0829 25.3259 93.3792 26.4518H93.339C92.8363 25.3661 91.7908 24.6423 90.4839 24.6423C89.0564 24.6423 88.0511 25.3661 87.4881 26.3111H87.4278V24.9238H84.7939V35.2381Z" fill="black"></path><path class="ccustom" d="M48.1762 17.572H50.9106V3.19629H48.1762V17.572Z" fill="black"></path><path class="ccustom" d="M57.5966 17.8736C60.7935 17.8736 62.985 15.5011 62.985 12.4249C62.985 9.3487 60.7935 6.97621 57.5966 6.97621C54.3998 6.97621 52.2082 9.3487 52.2082 12.4249C52.2082 15.5011 54.3998 17.8736 57.5966 17.8736ZM57.5966 15.7826C55.9077 15.7826 54.9829 14.4355 54.9829 12.4249C54.9829 10.4143 55.9077 9.04712 57.5966 9.04712C59.2654 9.04712 60.2104 10.4143 60.2104 12.4249C60.2104 14.4355 59.2654 15.7826 57.5966 15.7826Z" fill="black"></path><path class="ccustom" d="M68.8 21.0906C70.3281 21.0906 71.6551 20.7287 72.5196 19.9244C73.2836 19.2207 73.7461 18.2355 73.7461 16.7879V7.25769H71.1122V8.34341H71.072C70.4487 7.47885 69.5037 6.97621 68.2169 6.97621C65.6032 6.97621 63.7534 8.94659 63.7534 12.0228C63.7534 15.1392 66.0053 16.9487 68.2974 16.9487C69.6043 16.9487 70.3884 16.426 70.9916 15.7424H71.0519V16.8683C71.0519 18.2757 70.308 19.0196 68.7598 19.0196C67.4931 19.0196 66.9101 18.517 66.6889 17.8736H63.9746C64.2561 19.8842 65.9852 21.0906 68.8 21.0906ZM68.7598 14.7572C67.3524 14.7572 66.4275 13.7318 66.4275 11.9826C66.4275 10.2535 67.3524 9.16775 68.7397 9.16775C70.3884 9.16775 71.1926 10.4545 71.1926 11.9625C71.1926 13.4905 70.4889 14.7572 68.7598 14.7572Z" fill="black"></path><path class="ccustom" d="M80.3925 17.8736C83.5893 17.8736 85.7809 15.5011 85.7809 12.4249C85.7809 9.3487 83.5893 6.97621 80.3925 6.97621C77.1957 6.97621 75.0041 9.3487 75.0041 12.4249C75.0041 15.5011 77.1957 17.8736 80.3925 17.8736ZM80.3925 15.7826C78.7036 15.7826 77.7787 14.4355 77.7787 12.4249C77.7787 10.4143 78.7036 9.04712 80.3925 9.04712C82.0613 9.04712 83.0063 10.4143 83.0063 12.4249C83.0063 14.4355 82.0613 15.7826 80.3925 15.7826Z" fill="black"></path><path class="ccustom" d="M88.1779 13.6313H100V11.2789H88.1779V13.6313Z" fill="black"></path><path class="ccustom" d="M100.867 23.1717C100.867 22.709 101.242 22.3339 101.705 22.3339H103.38C103.843 22.3339 104.218 22.709 104.218 23.1717C104.218 23.6343 103.843 24.0094 103.38 24.0094H101.705C101.242 24.0094 100.867 23.6343 100.867 23.1717Z" fill="black"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M20.5216 0C31.5673 0 40.5216 8.9543 40.5216 20C40.5216 31.0457 31.5673 40 20.5216 40C9.47591 40 0.521606 31.0457 0.521606 20C0.521606 8.9543 9.47591 0 20.5216 0ZM19.7987 1.49659C17.5171 1.81769 15.3445 3.65108 13.658 6.7174C13.1688 7.60683 12.7274 8.58946 12.3427 9.65044C14.6359 9.07417 17.155 8.73442 19.7987 8.68187V1.49659ZM10.6524 10.1308C11.1307 8.62958 11.7159 7.2484 12.3912 6.02065C13.2272 4.50059 14.2194 3.18795 15.3373 2.17977C9.2584 3.94523 4.46683 8.73679 2.70138 14.8157C3.70955 13.6978 5.0222 12.7056 6.54226 11.8696C7.77001 11.1943 9.15118 10.6091 10.6524 10.1308ZM10.172 11.8211C9.59577 14.1143 9.25603 16.6334 9.20348 19.2771H2.01819C2.3393 16.9954 4.17269 14.8228 7.23901 13.1364C8.12844 12.6472 9.11107 12.2058 10.172 11.8211ZM10.6496 19.2771C10.7093 16.392 11.1246 13.6834 11.8118 11.2902C14.205 10.603 16.9137 10.1876 19.7987 10.1279V13.2508C18.7224 16.0062 16.5272 18.2012 13.7717 19.2771H10.6496ZM9.20348 20.7229H2.01819C2.3393 23.0046 4.17269 25.1771 7.23901 26.8636C8.12844 27.3528 9.11107 27.7942 10.172 28.1789C9.59577 25.8857 9.25603 23.3666 9.20348 20.7229ZM11.8118 28.7098C11.1246 26.3166 10.7093 23.608 10.6496 20.7229H13.7717C16.5272 21.7988 18.7225 23.9938 19.7987 26.7492V29.8721C16.9137 29.8124 14.205 29.397 11.8118 28.7098ZM10.6524 29.8692C9.15118 29.3909 7.77001 28.8057 6.54226 28.1304C5.0222 27.2944 3.70955 26.3022 2.70138 25.1843C4.46683 31.2632 9.2584 36.0548 15.3373 37.8202C14.2194 36.812 13.2272 35.4994 12.3912 33.9793C11.7159 32.7516 11.1307 31.3704 10.6524 29.8692ZM19.7987 38.5034C17.5171 38.1823 15.3445 36.3489 13.658 33.2826C13.1688 32.3932 12.7274 31.4105 12.3427 30.3496C14.6359 30.9258 17.155 31.2656 19.7987 31.3181V38.5034ZM25.7059 37.8202C26.8238 36.812 27.816 35.4994 28.6521 33.9793C29.3273 32.7516 29.9125 31.3704 30.3908 29.8692C31.892 29.3909 33.2732 28.8057 34.501 28.1304C36.021 27.2944 37.3337 26.3022 38.3418 25.1843C36.5764 31.2632 31.7848 36.0548 25.7059 37.8202ZM28.7005 30.3496C28.3158 31.4105 27.8744 32.3932 27.3852 33.2826C25.6988 36.3489 23.5262 38.1823 21.2445 38.5034V31.3181C23.8882 31.2656 26.4073 30.9258 28.7005 30.3496ZM30.8712 28.1789C31.9321 27.7942 32.9148 27.3528 33.8042 26.8636C36.8705 25.1771 38.7039 23.0046 39.025 20.7229H31.8397C31.7872 23.3666 31.4474 25.8857 30.8712 28.1789ZM30.3937 20.7229C30.334 23.608 29.9186 26.3166 29.2314 28.7098C26.8382 29.397 24.1296 29.8124 21.2445 29.8721V26.7515C22.3204 23.9951 24.5161 21.7991 27.2724 20.7229H30.3937ZM31.8397 19.2771H39.025C38.7039 16.9954 36.8705 14.8228 33.8042 13.1364C32.9148 12.6472 31.9321 12.2058 30.8712 11.8211C31.4474 14.1143 31.7872 16.6334 31.8397 19.2771ZM29.2314 11.2902C29.9186 13.6834 30.334 16.392 30.3937 19.2771H27.2724C24.5161 18.2009 22.3204 16.0049 21.2445 13.2485V10.1279C24.1296 10.1876 26.8382 10.603 29.2314 11.2902ZM30.3908 10.1308C31.892 10.6091 33.2732 11.1943 34.501 11.8696C36.021 12.7056 37.3337 13.6978 38.3418 14.8157C36.5764 8.73679 31.7848 3.94523 25.7059 2.17977C26.8238 3.18795 27.816 4.50059 28.6521 6.02065C29.3273 7.2484 29.9125 8.62958 30.3908 10.1308ZM21.2445 1.49659C23.5262 1.81769 25.6988 3.65108 27.3852 6.7174C27.8744 7.60684 28.3158 8.58946 28.7005 9.65044C26.4073 9.07417 23.8882 8.73442 21.2445 8.68187V1.49659Z" fill="black"></path></svg></a></li>
+        <li class="logo2 sponsor-logo"><a href=""><svg class="horizontal-logo" viewBox="0 0 202 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.6918 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#007DFC"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M10 1.47023e-06C10 1.31322 9.74135 2.61358 9.2388 3.82684C8.73625 5.04009 7.99966 6.14248 7.07107 7.07107C6.14249 7.99966 5.0401 8.73625 3.82684 9.2388C2.61358 9.74134 1.31322 10 6.15916e-06 10L5.72205e-06 20C2.62644 20 5.22716 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 -3.8147e-06L10 1.47023e-06Z" fill="#007DFC"></path><path class="ccustom" d="M125.619 14.4525H120.767V29.8648H125.619V14.4525Z" fill="#007DFC"></path><path class="ccustom" d="M121.307 11.5666C121.814 12.074 122.448 12.3277 123.209 12.3277C123.97 12.3277 124.594 12.074 125.08 11.5666C125.567 11.0381 125.81 10.4038 125.81 9.66385C125.81 8.90277 125.567 8.26849 125.08 7.76111C124.594 7.25369 123.97 7 123.209 7C122.448 7 121.814 7.25369 121.307 7.76111C120.82 8.26849 120.577 8.90277 120.577 9.66385C120.577 10.4038 120.82 11.0381 121.307 11.5666Z" fill="#007DFC"></path><path class="ccustom" d="M51.1562 29.8648V7.47568H56.1351V25.4885H66.0612V29.8648H51.1562Z" fill="#007DFC"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M75.0274 30.2136C73.4418 30.2136 72.0042 29.8648 70.7145 29.1671C69.446 28.4483 68.4418 27.4758 67.7018 26.2495C66.9619 25.0233 66.5919 23.6491 66.5919 22.1269C66.5919 20.6047 66.9619 19.2411 67.7018 18.036C68.4418 16.8309 69.446 15.8795 70.7145 15.1819C71.983 14.463 73.4207 14.1036 75.0274 14.1036C76.6342 14.1036 78.0718 14.4525 79.3403 15.1501C80.6088 15.8478 81.6131 16.8098 82.353 18.036C83.093 19.2411 83.463 20.6047 83.463 22.1269C83.463 23.6491 83.093 25.0233 82.353 26.2495C81.6131 27.4758 80.6088 28.4483 79.3403 29.1671C78.0718 29.8648 76.6342 30.2136 75.0274 30.2136ZM75.0274 25.8056C75.7251 25.8056 76.3382 25.6576 76.8668 25.3616C77.3953 25.0445 77.797 24.6111 78.0718 24.0614C78.3678 23.4906 78.5158 22.8457 78.5158 22.1269C78.5158 21.4081 78.3678 20.7844 78.0718 20.2559C77.7758 19.7062 77.3636 19.2834 76.835 18.9874C76.3276 18.6702 75.7251 18.5117 75.0274 18.5117C74.3509 18.5117 73.7484 18.6702 73.2198 18.9874C72.6913 19.2834 72.279 19.7062 71.983 20.2559C71.687 20.8056 71.5391 21.4398 71.5391 22.1586C71.5391 22.8563 71.687 23.4906 71.983 24.0614C72.279 24.6111 72.6913 25.0445 73.2198 25.3616C73.7484 25.6576 74.3509 25.8056 75.0274 25.8056Z" fill="#007DFC"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M87.3057 35.8902C88.5953 36.4821 90.0858 36.7781 91.7772 36.7781C93.4262 36.7781 94.8956 36.4504 96.1852 35.795C97.4749 35.1396 98.4896 34.2306 99.2296 33.0678C99.9695 31.905 100.34 30.5308 100.34 28.9451V14.4525H95.5826V15.488C95.2288 15.1902 94.827 14.9402 94.3776 14.7379C93.553 14.3362 92.6122 14.1353 91.5552 14.1353C90.1387 14.1353 88.8807 14.4736 87.7814 15.1501C86.6819 15.8055 85.8152 16.7146 85.1809 17.8774C84.5466 19.0191 84.2296 20.3087 84.2296 21.7464C84.2296 23.1629 84.5466 24.4525 85.1809 25.6153C85.8152 26.7781 86.6819 27.6978 87.7814 28.3743C88.8807 29.0508 90.1387 29.3891 91.5552 29.3891C92.5911 29.3891 93.5319 29.1883 94.3776 28.7866C94.7872 28.592 95.1572 28.3627 95.4875 28.0986V29.072C95.4875 30.1502 95.1387 30.9853 94.441 31.5773C93.7645 32.1693 92.8237 32.4652 91.6186 32.4652C90.6461 32.4652 89.811 32.2961 89.1133 31.9578C88.4368 31.6196 87.8236 31.1227 87.2739 30.4673L84.293 33.4483C85.0329 34.5054 86.0372 35.3194 87.3057 35.8902ZM94.219 24.6322C93.7327 24.9282 93.1514 25.0762 92.4748 25.0762C91.7983 25.0762 91.2063 24.9282 90.6989 24.6322C90.2126 24.3362 89.8321 23.9345 89.5573 23.4271C89.2824 22.8986 89.145 22.3383 89.145 21.7464C89.145 21.1121 89.2824 20.5413 89.5573 20.0339C89.8321 19.5265 90.2232 19.1248 90.7306 18.8288C91.238 18.5328 91.8194 18.3848 92.4748 18.3848C93.1514 18.3848 93.7327 18.5328 94.219 18.8288C94.7264 19.1248 95.1069 19.5265 95.3607 20.0339C95.6355 20.5413 95.7729 21.1121 95.7729 21.7464C95.7729 22.3806 95.6355 22.9514 95.3607 23.4588C95.1069 23.9451 94.7264 24.3362 94.219 24.6322Z" fill="#007DFC"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M110.551 30.2136C108.965 30.2136 107.527 29.8648 106.238 29.1671C104.969 28.4483 103.965 27.4758 103.225 26.2495C102.485 25.0233 102.115 23.6491 102.115 22.1269C102.115 20.6047 102.485 19.2411 103.225 18.036C103.965 16.8309 104.969 15.8795 106.238 15.1819C107.506 14.463 108.944 14.1036 110.551 14.1036C112.157 14.1036 113.595 14.4525 114.863 15.1501C116.132 15.8478 117.136 16.8098 117.876 18.036C118.616 19.2411 118.986 20.6047 118.986 22.1269C118.986 23.6491 118.616 25.0233 117.876 26.2495C117.136 27.4758 116.132 28.4483 114.863 29.1671C113.595 29.8648 112.157 30.2136 110.551 30.2136ZM110.551 25.8056C111.248 25.8056 111.861 25.6576 112.39 25.3616C112.918 25.0445 113.32 24.6111 113.595 24.0614C113.891 23.4906 114.039 22.8457 114.039 22.1269C114.039 21.4081 113.891 20.7844 113.595 20.2559C113.299 19.7062 112.887 19.2834 112.358 18.9874C111.851 18.6702 111.248 18.5117 110.551 18.5117C109.874 18.5117 109.271 18.6702 108.743 18.9874C108.214 19.2834 107.802 19.7062 107.506 20.2559C107.21 20.8056 107.062 21.4398 107.062 22.1586C107.062 22.8563 107.21 23.4906 107.506 24.0614C107.802 24.6111 108.214 25.0445 108.743 25.3616C109.271 25.6576 109.874 25.8056 110.551 25.8056Z" fill="#007DFC"></path><path class="ccustom" fill-rule="evenodd" clip-rule="evenodd" d="M137.281 30.1819C136.246 30.1819 135.294 29.9811 134.427 29.5794C133.971 29.368 133.559 29.1156 133.191 28.8222V36.3659H128.402V14.4525H133.254V15.5162C133.606 15.2283 133.997 14.9794 134.427 14.7696C135.294 14.3467 136.246 14.1353 137.281 14.1353C138.74 14.1353 140.03 14.4842 141.15 15.1819C142.292 15.8795 143.18 16.8309 143.814 18.036C144.47 19.2411 144.797 20.6153 144.797 22.1586C144.797 23.702 144.47 25.0762 143.814 26.2813C143.18 27.4864 142.292 28.4377 141.15 29.1354C140.03 29.8331 138.74 30.1819 137.281 30.1819ZM136.394 25.8056C137.091 25.8056 137.694 25.647 138.201 25.3299C138.73 25.0128 139.142 24.5793 139.438 24.0297C139.734 23.48 139.882 22.8563 139.882 22.1586C139.882 21.4398 139.734 20.8056 139.438 20.2559C139.142 19.7062 138.73 19.2834 138.201 18.9874C137.694 18.6702 137.102 18.5117 136.425 18.5117C135.749 18.5117 135.146 18.6702 134.618 18.9874C134.11 19.2834 133.709 19.7062 133.413 20.2559C133.117 20.8056 132.969 21.4398 132.969 22.1586C132.969 22.8563 133.106 23.48 133.381 24.0297C133.677 24.5793 134.089 25.0128 134.618 25.3299C135.146 25.647 135.738 25.8056 136.394 25.8056Z" fill="#007DFC"></path><path class="ccustom" d="M149.546 29.8965C150.434 30.1291 151.332 30.2453 152.241 30.2453C154.165 30.2453 155.687 29.8014 156.808 28.9134C157.949 28.0255 158.52 26.831 158.52 25.3299C158.52 24.3574 158.341 23.5751 157.981 22.9832C157.622 22.3701 157.157 21.8838 156.586 21.5244C156.015 21.165 155.412 20.8795 154.778 20.6681C154.144 20.4567 153.541 20.277 152.971 20.129C152.4 19.981 151.935 19.8119 151.575 19.6216C151.216 19.4313 151.036 19.1776 151.036 18.8605C151.036 18.5645 151.174 18.3425 151.448 18.1945C151.723 18.0254 152.135 17.9409 152.685 17.9409C153.256 17.9409 153.837 18.0571 154.429 18.2897C155.042 18.5222 155.592 18.924 156.078 19.4948L158.837 16.7041C158.14 15.8161 157.231 15.1501 156.11 14.7062C155.011 14.2411 153.806 14.0085 152.495 14.0085C151.248 14.0085 150.159 14.2199 149.229 14.6427C148.298 15.0656 147.579 15.647 147.072 16.3869C146.565 17.1057 146.311 17.962 146.311 18.9557C146.311 19.8859 146.491 20.6576 146.85 21.2707C147.209 21.8626 147.675 22.3278 148.245 22.666C148.816 23.0043 149.419 23.2686 150.053 23.4588C150.687 23.6491 151.29 23.8288 151.861 23.998C152.431 24.146 152.897 24.3257 153.256 24.5371C153.637 24.7274 153.827 25.0128 153.827 25.3933C153.827 25.6893 153.668 25.9218 153.351 26.091C153.055 26.2601 152.622 26.3447 152.051 26.3447C151.226 26.3447 150.465 26.1967 149.768 25.9007C149.07 25.5836 148.467 25.1502 147.96 24.6005L145.201 27.3912C145.73 27.962 146.364 28.4695 147.104 28.9134C147.865 29.3362 148.679 29.6639 149.546 29.8965Z" fill="#007DFC"></path><path class="ccustom" d="M167.368 30.2136C165.952 30.2136 164.694 29.9282 163.595 29.3574C162.516 28.7654 161.671 27.962 161.058 26.9472C160.444 25.9113 160.138 24.7274 160.138 23.3954V14.4525H164.99V23.332C164.99 23.8605 165.074 24.3151 165.244 24.6956C165.434 25.0762 165.709 25.3722 166.068 25.5836C166.428 25.795 166.861 25.9007 167.368 25.9007C168.087 25.9007 168.658 25.6787 169.081 25.2347C169.504 24.7696 169.715 24.1354 169.715 23.332V14.4525H174.567V23.3637C174.567 24.7168 174.261 25.9113 173.647 26.9472C173.034 27.962 172.189 28.7654 171.11 29.3574C170.032 29.9282 168.785 30.2136 167.368 30.2136Z" fill="#007DFC"></path><path class="ccustom" d="M181.831 14.4525H176.979V29.8648H181.831V20.8584C181.831 20.3299 181.937 19.8859 182.148 19.5265C182.381 19.1671 182.688 18.8922 183.068 18.702C183.449 18.4905 183.882 18.3848 184.368 18.3848C185.066 18.3848 185.647 18.6068 186.112 19.0508C186.599 19.4736 186.842 20.0762 186.842 20.8584V29.8648H191.694V20.8584C191.694 20.3299 191.8 19.8859 192.011 19.5265C192.244 19.1671 192.55 18.8922 192.931 18.702C193.311 18.4905 193.745 18.3848 194.231 18.3848C194.929 18.3848 195.51 18.6068 195.975 19.0508C196.461 19.4736 196.704 20.0762 196.704 20.8584V29.8648H201.557V20.3193C201.557 19.0297 201.282 17.9303 200.732 17.0212C200.203 16.0909 199.474 15.3827 198.544 14.8965C197.635 14.389 196.588 14.1353 195.404 14.1353C194.199 14.1353 193.11 14.3996 192.138 14.9282C191.506 15.2649 190.954 15.6995 190.481 16.2319C190.04 15.675 189.504 15.2193 188.871 14.8647C188.026 14.3785 187.064 14.1353 185.986 14.1353C184.844 14.1353 183.819 14.3785 182.91 14.8647C182.514 15.067 182.155 15.3093 181.831 15.5916V14.4525Z" fill="#007DFC"></path></svg></a></li>
+        <li class="logo3 sponsor-logo"><a href=""><svg class="vertical-logo" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 100 40"><path fill="#1D2633" d="M4.77 4.235C5.03 3.001 6.26 2 7.513 2h6.812L8.66 28.823H1.848c-1.254 0-2.06-1-1.799-2.235L4.77 4.235ZM27.477 4.235C27.738 3.001 28.967 2 30.22 2h6.812l-5.665 26.823h-6.812c-1.254 0-2.06-1-1.799-2.235l4.721-22.353ZM72.892 4.235C73.152 3.001 74.38 2 75.635 2h6.812l-5.665 26.823h-6.813c-1.254 0-2.059-1-1.798-2.235l4.72-22.353ZM39.303 2h6.812c1.254 0 2.06 1 1.799 2.235l-4.721 22.353c-.26 1.235-1.489 2.235-2.743 2.235h-6.812L39.303 2ZM84.718 2h6.812c1.254 0 2.06 1 1.799 2.235l-4.722 22.353c-.26 1.235-1.488 2.235-2.742 2.235h-6.813L84.718 2ZM50.185 4.235C50.445 3.001 51.673 2 52.927 2h6.813l-5.666 26.823h-6.812c-1.254 0-2.06-1-1.798-2.235l4.72-22.353ZM62.01 2h6.813c1.254 0 2.059 1 1.798 2.235l-7.081 33.53C63.278 38.999 62.05 40 60.796 40h-6.813L62.01 2ZM12.819 19.882h9.083l-1.416 6.706c-.261 1.235-1.49 2.235-2.743 2.235H10.93l1.888-8.94ZM44.52 31.059h9.082L51.714 40h-6.812c-1.255 0-2.06-1-1.799-2.235l1.416-6.706ZM69.174 33.138l-1.15 5.446c-.05.234-.128.298-.366.298h-.523c-.238 0-.29-.064-.24-.298l1.15-5.446c.05-.233.128-.298.366-.298h.523c.238 0 .29.065.24.298ZM70.686 36.812h-.107c-.114 0-.154.032-.177.145l-.344 1.627c-.05.234-.129.298-.366.298h-.524c-.237 0-.289-.064-.24-.298l1.15-5.446c.05-.233.13-.298.367-.298h1.08c1.244 0 1.715.443 1.485 1.53l-.192.911c-.23 1.088-.888 1.53-2.132 1.53Zm.316-2.699-.3 1.426c-.025.113.001.145.116.145h.172c.4 0 .615-.161.702-.572l.12-.572c.087-.41-.059-.572-.46-.572h-.172c-.114 0-.154.032-.178.145ZM74.74 34.991l.85.935c.446.483.508.773.394 1.313l-.03.145c-.215 1.015-.727 1.579-1.914 1.579-1.186 0-1.479-.475-1.205-1.773l.034-.16c.05-.234.129-.299.366-.299h.556c.238 0 .29.065.24.298l-.075.355c-.068.322.036.451.322.451.287 0 .443-.12.505-.41l.032-.154c.048-.226.022-.338-.224-.604l-.8-.862c-.448-.475-.505-.75-.391-1.29l.037-.176c.215-1.015.727-1.58 1.913-1.58 1.187 0 1.48.476 1.206 1.773l-.034.161c-.05.234-.129.298-.366.298h-.557c-.237 0-.289-.064-.24-.298l.075-.354c.068-.323-.035-.451-.322-.451-.286 0-.443.12-.504.41l-.029.137c-.05.234-.024.347.161.556ZM79.532 33.138c.05-.233.128-.298.366-.298h.523c.238 0 .29.065.24.298l-.856 4.053c-.274 1.297-.767 1.772-1.954 1.772-1.186 0-1.479-.475-1.205-1.773l.856-4.052c.05-.233.129-.298.366-.298h.524c.237 0 .289.065.24.298l-.897 4.246c-.068.322.044.451.355.451.302 0 .477-.129.545-.451l.897-4.246ZM82.938 36.417c.003.065.024.08.065.08.04 0 .069-.015.099-.08l1.414-3.367c.069-.17.151-.21.356-.21h.794c.237 0 .289.065.24.298l-1.15 5.446c-.05.234-.13.298-.367.298h-.376c-.237 0-.29-.064-.24-.298l.552-2.61c.015-.072.002-.089-.047-.089-.033 0-.07.017-.09.073l-1.142 2.659c-.082.193-.187.265-.424.265H82.4c-.246 0-.32-.072-.32-.265l-.028-2.66c-.005-.056-.018-.072-.059-.072-.049 0-.069.017-.084.089l-.551 2.61c-.05.234-.128.298-.366.298h-.376c-.238 0-.29-.064-.24-.298l1.15-5.446c.05-.233.129-.298.366-.298h.68c.286 0 .378.065.376.347l-.011 3.23ZM100 2c0 1.105-.89 2-1.987 2a1.993 1.993 0 0 1-1.987-2c0-1.105.89-2 1.987-2S100 .895 100 2Z"></path></svg></a></li>
+        <li class="logo4 sponsor-logo"><a href=""><svg class="horizontal-logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 187 40"><path fill="#3A724F" fill-rule="evenodd" d="M19.87 4.567 22.507 0l7.476 4.317-2.636 4.566c-.463.801.23 1.775 1.138 1.6l5.052-.975 1.635 8.477-5.052.974c-8.172 1.576-14.411-7.184-10.25-14.392Z" clip-rule="evenodd"></path><path fill="#DC8E43" fill-rule="evenodd" d="M15.302 35.433 12.665 40l-7.477-4.316 2.637-4.567c.463-.801-.23-1.775-1.139-1.6l-5.051.974L0 22.015l5.052-.974c8.172-1.576 14.41 7.184 10.25 14.392Z" clip-rule="evenodd"></path><path fill="#14424C" fill-rule="evenodd" d="M15.53 4.567 12.894 0 5.417 4.317l2.637 4.566c.462.801-.23 1.775-1.139 1.6l-5.052-.975L.23 17.985l5.051.974c8.173 1.576 14.412-7.184 10.25-14.392Z" clip-rule="evenodd"></path><path fill="#C85D1B" fill-rule="evenodd" d="M19.65 35.433 22.285 40l7.477-4.316-2.637-4.567c-.462-.801.23-1.775 1.139-1.6l5.051.974 1.635-8.476-5.052-.974c-8.172-1.576-14.41 7.184-10.25 14.392Z" clip-rule="evenodd"></path><path fill="#14424C" d="M163.114 30.153v-8.5c0-1.178.271-2.235.813-3.17.561-.954 1.356-1.702 2.385-2.245 1.029-.542 2.254-.813 3.675-.813a7.23 7.23 0 0 1 1.964.252c.599.15 1.141.365 1.627.645.505.262.935.58 1.291.954h.056a5.5 5.5 0 0 1 1.29-.954 6.772 6.772 0 0 1 1.656-.645 7.541 7.541 0 0 1 1.992-.252c1.421 0 2.646.27 3.675.813 1.028.543 1.823 1.29 2.384 2.245.562.935.842 1.991.842 3.17v8.5h-4.377v-8.36c0-.467-.121-.888-.364-1.262a2.663 2.663 0 0 0-.926-.954 2.508 2.508 0 0 0-1.347-.365c-.505 0-.963.122-1.374.365a2.654 2.654 0 0 0-.926.954 2.4 2.4 0 0 0-.337 1.262v8.36h-4.348v-8.36c0-.467-.122-.888-.365-1.262a2.585 2.585 0 0 0-.954-.954 2.508 2.508 0 0 0-1.347-.365c-.505 0-.963.122-1.374.365a2.654 2.654 0 0 0-.926.954 2.41 2.41 0 0 0-.337 1.262v8.36h-4.348ZM153.603 30.49c-1.477 0-2.759-.28-3.843-.842-1.066-.58-1.889-1.356-2.469-2.328-.58-.991-.87-2.086-.87-3.283v-8.276h4.349v8.164c0 .505.121.973.364 1.403.243.411.571.748.982 1.01.43.243.917.365 1.459.365.524 0 .991-.122 1.403-.365.43-.262.767-.599 1.01-1.01.243-.43.365-.898.365-1.403v-8.164h4.348v8.276c0 1.197-.281 2.292-.842 3.283-.561.972-1.374 1.749-2.44 2.328-1.048.561-2.32.842-3.816.842ZM132.414 30.153v-3.45h6.93c.187 0 .355-.038.505-.113.149-.093.271-.215.364-.364a.93.93 0 0 0 0-.982.9.9 0 0 0-.364-.337.934.934 0 0 0-.505-.14h-2.525c-.936 0-1.787-.15-2.553-.449a4.052 4.052 0 0 1-1.796-1.459c-.43-.673-.645-1.543-.645-2.609 0-.823.196-1.571.589-2.244a4.76 4.76 0 0 1 1.655-1.628 4.568 4.568 0 0 1 2.329-.617h6.929v3.479h-6.256a.97.97 0 0 0-.673.253.841.841 0 0 0-.253.617c0 .262.085.486.253.673a.97.97 0 0 0 .673.253h2.469c1.047 0 1.945.159 2.693.476.767.3 1.356.786 1.768 1.46.43.673.645 1.542.645 2.608 0 .842-.215 1.609-.645 2.3a4.613 4.613 0 0 1-1.684 1.656c-.692.412-1.477.617-2.356.617h-7.547ZM122.94 15.425c1.216 0 2.291.196 3.226.589a6.41 6.41 0 0 1 2.413 1.627 6.993 6.993 0 0 1 1.543 2.469c.355.935.533 1.973.533 3.114 0 1.421-.299 2.684-.898 3.787a6.471 6.471 0 0 1-2.412 2.553c-1.029.617-2.226.926-3.591.926-.58 0-1.132-.075-1.656-.224a5.312 5.312 0 0 1-1.402-.646 3.9 3.9 0 0 1-1.038-1.038h-.085v7.66h-4.348V23.223c0-1.59.318-2.965.954-4.124a6.666 6.666 0 0 1 2.693-2.694c1.16-.654 2.516-.981 4.068-.981Zm0 3.759c-.673 0-1.262.168-1.767.505-.487.318-.861.767-1.123 1.347-.261.56-.392 1.197-.392 1.907 0 .711.131 1.347.392 1.908.262.561.636 1.01 1.123 1.347.505.318 1.094.477 1.767.477.673 0 1.253-.16 1.739-.477a3.297 3.297 0 0 0 1.123-1.347c.28-.561.42-1.197.42-1.908 0-.71-.14-1.346-.42-1.907-.262-.58-.636-1.03-1.123-1.347-.486-.337-1.066-.505-1.739-.505ZM108.617 30.153V15.761h4.377v14.392h-4.377Zm2.188-16.019c-.692 0-1.29-.252-1.795-.757-.505-.505-.758-1.104-.758-1.796s.253-1.29.758-1.795c.505-.524 1.103-.786 1.795-.786s1.291.262 1.796.786c.505.505.757 1.103.757 1.795s-.252 1.29-.757 1.796c-.505.505-1.104.757-1.796.757ZM99.105 30.49c-1.477 0-2.805-.327-3.984-.982a7.462 7.462 0 0 1-2.805-2.693c-.673-1.141-1.01-2.422-1.01-3.844 0-1.44.337-2.721 1.01-3.843a7.462 7.462 0 0 1 2.805-2.693c1.179-.674 2.507-1.01 3.984-1.01 1.478 0 2.796.336 3.956 1.01a7.25 7.25 0 0 1 2.777 2.693c.692 1.122 1.038 2.403 1.038 3.843 0 1.422-.346 2.703-1.038 3.844a7.25 7.25 0 0 1-2.777 2.693c-1.178.655-2.497.982-3.956.982Zm0-3.787c.692 0 1.291-.169 1.796-.505a3.424 3.424 0 0 0 1.178-1.347c.281-.561.421-1.197.421-1.908 0-.692-.14-1.318-.421-1.88a3.423 3.423 0 0 0-1.178-1.346c-.505-.337-1.104-.505-1.796-.505s-1.3.168-1.823.505a3.428 3.428 0 0 0-1.179 1.347 4.144 4.144 0 0 0-.42 1.88c0 .71.14 1.346.42 1.907a3.43 3.43 0 0 0 1.179 1.347c.523.336 1.131.505 1.823.505ZM77.174 35.849v-3.732h7.181c.281 0 .515-.093.702-.28a.83.83 0 0 0 .28-.646v-3.17h-.084a6.59 6.59 0 0 1-1.206 1.094c-.412.3-.88.524-1.403.674a6.023 6.023 0 0 1-1.711.224c-1.272 0-2.413-.3-3.423-.898-.991-.617-1.777-1.468-2.357-2.553-.56-1.084-.841-2.319-.841-3.703 0-1.365.29-2.609.87-3.731.598-1.122 1.468-2.02 2.609-2.693 1.14-.674 2.534-1.01 4.18-1.01 1.571 0 2.927.327 4.068.982a6.624 6.624 0 0 1 2.693 2.72c.636 1.16.954 2.526.954 4.097v8.416c0 1.29-.383 2.31-1.15 3.058-.748.767-1.786 1.15-3.114 1.15h-8.248Zm4.825-9.483c.673 0 1.253-.15 1.74-.449a3.18 3.18 0 0 0 1.121-1.262 3.834 3.834 0 0 0 .393-1.74c0-.673-.13-1.29-.392-1.851-.262-.561-.636-1.001-1.123-1.319-.486-.337-1.066-.505-1.74-.505-.654 0-1.234.159-1.739.477-.486.318-.86.748-1.122 1.29-.261.543-.392 1.15-.392 1.824 0 .655.13 1.253.392 1.796.262.523.636.944 1.123 1.262.504.318 1.084.477 1.739.477ZM65.473 30.49c-1.477 0-2.805-.327-3.983-.982a7.46 7.46 0 0 1-2.806-2.693c-.673-1.141-1.01-2.422-1.01-3.844 0-1.44.337-2.721 1.01-3.843a7.46 7.46 0 0 1 2.806-2.693c1.178-.674 2.506-1.01 3.983-1.01 1.478 0 2.796.336 3.956 1.01a7.252 7.252 0 0 1 2.777 2.693c.692 1.122 1.038 2.403 1.038 3.843 0 1.422-.346 2.703-1.038 3.844a7.252 7.252 0 0 1-2.777 2.693c-1.178.655-2.497.982-3.956.982Zm0-3.787c.692 0 1.29-.169 1.796-.505a3.43 3.43 0 0 0 1.178-1.347c.28-.561.42-1.197.42-1.908 0-.692-.14-1.318-.42-1.88a3.429 3.429 0 0 0-1.178-1.346c-.505-.337-1.104-.505-1.796-.505s-1.3.168-1.823.505a3.428 3.428 0 0 0-1.179 1.347 4.145 4.145 0 0 0-.42 1.88c0 .71.14 1.346.42 1.907a3.43 3.43 0 0 0 1.179 1.347c.523.336 1.131.505 1.823.505ZM51.547 30.153c-1.216 0-2.282-.27-3.198-.813a5.763 5.763 0 0 1-2.132-2.16c-.505-.898-.758-1.89-.758-2.974V10.515h4.713v14.027c0 .45.16.842.477 1.179.318.336.71.505 1.178.505h5.19v3.927h-5.47Z"></path></svg></a></li>
+        <li class="logo5 sponsor-logo"><a href=""><svg class="vertical-logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 41"><path fill="#2A2E4E" d="M54 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path><path fill="#2A2E4E" fill-rule="evenodd" d="M13.75 40.794C6.156 40.794 0 34.638 0 27.044V1h5v26.044a8.75 8.75 0 0 0 8.75 8.75c4.893 0 8.75-3.771 8.75-8.544h5v7.5a1.25 1.25 0 0 0 2.5 0v-8.875a6.25 6.25 0 0 1-7.5-6.125V7.25a6.25 6.25 0 1 1 12.5 0v27.5a1.25 1.25 0 1 0 2.5 0V7.25a6.25 6.25 0 1 1 12.5 0v27.5a6.25 6.25 0 0 1-10 5A6.222 6.222 0 0 1 36.25 41a6.222 6.222 0 0 1-3.75-1.25 6.251 6.251 0 0 1-9.466-2.47c-2.456 2.197-5.723 3.514-9.284 3.514Zm30-4.794c-.69 0-1.25-.56-1.25-1.25V7.25a1.25 1.25 0 1 1 2.5 0v27.5c0 .69-.56 1.25-1.25 1.25ZM30 19.75a1.25 1.25 0 0 1-2.5 0V7.25a1.25 1.25 0 1 1 2.5 0v12.5Z" clip-rule="evenodd"></path><path fill="#2A2E4E" fill-rule="evenodd" d="M7.5 27.25a6.25 6.25 0 1 0 12.5 0v-20a6.25 6.25 0 1 0-12.5 0v20Zm6.25 1.25c-.69 0-1.25-.56-1.25-1.25v-20a1.25 1.25 0 1 1 2.5 0v20c0 .69-.56 1.25-1.25 1.25Z" clip-rule="evenodd"></path></svg></a></li>
+        <li class="logo6 sponsor-logo"><a href=""><svg class="vertical-logo" viewBox="0 0 104 74" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.47167 67.076V52H6V67.076H8.47167Z" class="cneutral" fill="#152C4F"></path> <path d="M9.98449 62.0507C9.98449 65.1307 12.051 67.3191 15.1912 67.3191C18.3314 67.3191 20.3979 65.1307 20.3979 62.0507C20.3979 58.9706 18.3314 56.7822 15.1912 56.7822C12.051 56.7822 9.98449 58.9706 9.98449 62.0507ZM12.4764 62.0507C12.4764 60.2472 13.5502 58.9909 15.1912 58.9909C16.8322 58.9909 17.906 60.2472 17.906 62.0507C17.906 63.8338 16.8322 65.1104 15.1912 65.1104C13.5502 65.1104 12.4764 63.8338 12.4764 62.0507Z" class="cneutral" fill="#152C4F"></path> <path d="M21.2292 61.848C21.2292 64.766 23.1133 66.8734 25.9294 66.8734C27.3881 66.8734 28.6442 66.2857 29.2722 65.3131V67.0152C29.2722 68.6565 28.239 69.7508 26.5169 69.7508C24.9772 69.7508 23.9237 69.001 23.7819 67.6839H21.29C21.6141 70.2979 23.6198 72 26.3751 72C29.6167 72 31.6831 69.8723 31.6831 66.5694V57.0659H29.4951L29.3533 58.4235C28.7455 57.3698 27.4894 56.7416 26.0104 56.7416C23.1538 56.7416 21.2292 58.9098 21.2292 61.848ZM23.7414 61.7872C23.7414 60.1256 24.7949 58.9098 26.3549 58.9098C28.0567 58.9098 29.1912 60.1459 29.1912 61.7872C29.1912 63.4488 28.0567 64.7254 26.3549 64.7254C24.8151 64.7254 23.7414 63.4691 23.7414 61.7872Z" class="cneutral" fill="#152C4F"></path> <path d="M32.9063 62.0507C32.9063 65.1307 34.9728 67.3191 38.113 67.3191C41.2532 67.3191 43.3197 65.1307 43.3197 62.0507C43.3197 58.9706 41.2532 56.7822 38.113 56.7822C34.9728 56.7822 32.9063 58.9706 32.9063 62.0507ZM35.3982 62.0507C35.3982 60.2472 36.472 58.9909 38.113 58.9909C39.754 58.9909 40.8278 60.2472 40.8278 62.0507C40.8278 63.8338 39.754 65.1104 38.113 65.1104C36.472 65.1104 35.3982 63.8338 35.3982 62.0507Z" class="cneutral" fill="#152C4F"></path> <path d="M45.9946 55.0193C46.805 55.0193 47.4736 54.3708 47.4736 53.54C47.4736 52.7295 46.805 52.0811 45.9946 52.0811C45.164 52.0811 44.5359 52.7295 44.5359 53.54C44.5359 54.3708 45.164 55.0193 45.9946 55.0193ZM44.7588 67.076H47.2305V57.0659H44.7588V67.076Z" class="cneutral" fill="#152C4F"></path> <path d="M49.3959 71.7163H51.8067V65.6981C52.4348 66.7315 53.7922 67.3394 55.2914 67.3394C58.2493 67.3394 60.0119 65.0699 59.9713 61.9493C59.9106 58.8085 58.1075 56.7619 55.2711 56.7619C53.7517 56.7619 52.374 57.4306 51.7662 58.5856L51.6244 57.0659H49.3959V71.7163ZM51.908 62.0709C51.908 60.2675 53.0021 59.0111 54.7241 59.0111C56.4462 59.0111 57.4794 60.2877 57.4794 62.0709C57.4794 63.8541 56.4462 65.1104 54.7241 65.1104C53.0021 65.1104 51.908 63.8744 51.908 62.0709Z" class="cneutral" fill="#152C4F"></path> <path d="M60.5989 64.077C60.68 66.0628 62.2197 67.3394 64.6103 67.3394C66.9604 67.3394 68.5609 66.0831 68.5609 64.1378C68.5609 62.6991 67.6695 61.7264 66.0285 61.3212L64.2659 60.8956C63.5163 60.693 63.0098 60.4296 63.0098 59.7812C63.0098 59.0922 63.5568 58.6059 64.4482 58.6059C65.3802 58.6059 65.988 59.1327 65.988 60.0041H68.2368C68.1557 58.0182 66.6768 56.7619 64.509 56.7619C62.3615 56.7619 60.761 58.0182 60.761 59.923C60.761 61.2199 61.5106 62.2938 63.4353 62.8004L65.1776 63.2462C65.8259 63.4286 66.2311 63.7325 66.2311 64.2999C66.2311 65.0902 65.4815 65.4549 64.5698 65.4549C63.4758 65.4549 62.8477 64.9483 62.8477 64.077H60.5989Z" class="cneutral" fill="#152C4F"></path> <path d="M73.6877 67.3394C75.0451 67.3394 76.3417 66.7112 76.9292 65.7791L77.0913 67.076H79.4009V57.0659H76.9292V62.3141C76.9292 64.1175 76.2404 65.1307 74.6197 65.1307C73.3636 65.1307 72.4924 64.5228 72.4924 62.4559V57.0659H70.0207V63.3273C70.0207 65.7183 71.3173 67.3394 73.6877 67.3394Z" class="cneutral" fill="#152C4F"></path> <path d="M84.0541 67.076V61.3212C84.0541 59.7001 85.0063 58.9301 86.1814 58.9301C87.3564 58.9301 88.1263 59.6798 88.1263 61.0983V67.076H90.5372V61.3414C90.5372 59.7001 91.4691 58.9301 92.6442 58.9301C93.8395 58.9301 94.6094 59.6798 94.6094 61.0983V67.076H97V60.5309C97 58.2209 95.7236 56.7619 93.2925 56.7619C91.773 56.7619 90.5777 57.4914 90.0915 58.6667C89.5445 57.4914 88.4505 56.7619 86.7892 56.7619C85.6141 56.7619 84.5606 57.309 83.9731 58.2006L83.8515 57.0659H81.5825V67.076H84.0541Z" class="cneutral" fill="#152C4F"></path> <path d="M45.487 38.3523C42.2308 44.2121 35.6009 47 28.8971 47H2C30 43.5 49.5 29.5 52 10C54.5 29.5 74 43.5 102 47H75.1029C68.3991 47 61.7692 44.2121 58.513 38.3523C54.9886 32.01 52.7432 24.8334 52 17C51.2568 24.8334 49.0114 32.01 45.487 38.3523Z" class="ccustom" fill="#1A4688"></path> <path d="M30.1051 36.2813C28.5344 37.1656 26.8822 37.9962 25.1522 38.7699C24.1695 35.3753 23.8079 31.8138 24.0963 28.266C24.4778 23.5725 25.9851 19.0476 28.4847 15.0923C30.9844 11.137 34.3991 7.87319 38.4265 5.59008C42.4539 3.30698 46.9697 2.07501 51.5738 2.00332C56.1779 1.93162 60.7282 3.02241 64.8217 5.17906C68.9152 7.3357 72.4255 10.4916 75.0416 14.3673C77.6578 18.243 79.2991 22.7188 79.8202 27.3982C80.2463 31.2257 79.9123 35.0929 78.8478 38.7699C77.1178 37.9962 75.4656 37.1655 73.8949 36.2812C74.5571 33.593 74.7427 30.7964 74.4342 28.0256C74.014 24.2521 72.6904 20.6428 70.5808 17.5175C68.4711 14.3922 65.6404 11.8472 62.3394 10.1081C59.0384 8.36897 55.369 7.48937 51.6563 7.54718C47.9435 7.60499 44.302 8.59845 41.0544 10.4395C37.8067 12.2806 35.053 14.9125 33.0373 18.1021C31.0216 21.2917 29.8061 24.9405 29.4985 28.7254C29.2917 31.2694 29.4993 33.8222 30.1051 36.2813Z" class="ccompli1" fill="#7FB5E6"></path> </svg></a></li>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="logo-footer">
+          <img src="assets/img/lycans-logo-b.webp" loading="lazy" alt="lycans-logo-b">
+        </div>
+        <div class="border logo-border"></div>
+        <div class="footer-group" id="teams-footer">
+          <div><h6>teams</h6></div>
+          <li><a class="page-tt" href="test.html">E-sports</a></li>
+          <li><a class="page-tt" href="test.html">Basketball</a></li>
+          <li><a class="page-tt" href="test.html">Volleyball</a></li>
+        </div>
+        <div class="footer-group" id="news-footer">
+          <div><h6>News</h6></div>
+          <li><a class="page-tt" href="test.html">Articles</a></li>
+          <li><a class="page-tt" href="test.html">Galleries</a></li>
+        </div>
+        <div class="footer-group" id="about-footer">
+          <div><h6>About</h6></div>
+          <li><a class="page-tt" href="test.html">Our Story</a></li>
+          <li><a class="page-tt" href="test.html">Management</a></li>
+        </div>
+        <div class="footer-group" id="shop-footer">
+          <div><h6>Shop</h6></div>
+          <li><a class="page-tt" href="test.html">24/25 Kit</a></li>
+          <li><a class="page-tt" href="test.html">Accessories</a></li>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="copyright">
+        <p class="project-details">Lycans Project 2024</p>
+        <button class="backtop-button" id="scrollTopButton">
+          <p>Back to top</p>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+      <div class="footer-img"></div>
+    </footer>
+</div>   
+</body>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+<script>const lenis = new Lenis()
+
+  lenis.on('scroll', (e) => {
+    console.log(e)
+  })
+  
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  
+  requestAnimationFrame(raf)</script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11.1.9/swiper-bundle.min.js"></script>
+<script defer src="assets/js/swiper.js"></script>
+<script defer src="https://kit.fontawesome.com/7e403103d5.js" crossorigin="anonymous"></script>
+</html>
